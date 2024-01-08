@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1560px, 100vw);
+    /*max used for bg image width height balance and bg image remain as it is*/
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.54;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 110px;
+
+}
+
+nav img {
+    width: 190px;
+    /* color: red; */
+    position: relative;
+    /*used for z-index*/
+    z-index: 10;
+    /*Netflix logo come out of bg image*/
+
+}
+
+nav button {
+    position: relative;
+    /*used for z-index work*/
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 0 29px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 33px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.line {
+    /* width: 100%; */
+    height: 0.5rem;
+    /* position: absolute; */
+    /* bottom: -0.5rem; */
+    background-color: rgb(35, 35, 35);
+}
+
+.btn {
+    cursor: pointer;
+    padding: 4px 14px;
+    font-weight: 500;
+    font-size: .999rem;
+    color: white;
+    background: #14141477;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+
+}
+
+.main-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-btns {
+    /* display used to make changes like gap etc  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn.red-sign {
+    cursor: pointer;
+    padding: 0.25rem 1rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.btn.red-get {
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+.main input {
+    padding: 0.75rem 1.5rem;
+    background: rgba(22, 22, 22, 0.87);
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    border: 2px solid rgba(169, 167, 167, 0.86);
+    color: white;
+
+}
+
+/* next tv part */
+/* .sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 60px;
+
+}
+
+.sec1 span {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.secImg {
+    width: 30vw;
+    position: relative;
+}
+
+.secImg video {
+    position: absolute;
+    /*to move vdo on tv img */
+/* top: 91px;
+    right: 0;
+    left: 76px;
+    z-index: -1;
+} 
+
+.sec2 .secImg {
+    width: auto;
+}
+
+.sec2 div {
+    font-size: 50px;
+
+}
+
+.sec2 span {
+    font-size: 25px;
+}
+.sec3 video{
+    width: 495px;
+    height: 30vh;
+   
+}
+
+.sec4 .secImg {
+    width: auto;
+}
+
+.sec4 div {
+    font-size: 53px;
+
+}
+
+.sec4 span {
+    font-size: 23px;
+} */
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 60px;
+}
+
+
+
+.secImg {
+    position: relative;
+    
+}
+
+.secImg img {
+    width: 550px;
+    position: relative;
+
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 550px;
+    z-index: -1;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+
+}
+
+
+
+
+
+
+/* FAQ */
+.faq {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    padding: 70px;
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.qsbox {
+    display: flex;
+    justify-content: space-between;
+    /*for plus*/
+    transition: all .2s ease-in-out;
+    padding: 30px;
+    background-color: rgb(48, 47, 47);
+    color: rgb(255, 255, 255);
+    margin: 34px auto;
+    max-width: 70vw;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.qsbox:hover {
+    background-color: rgba(114, 114, 114, 0.529);
+}
+
+/* .qsbox svg{
+    filter: invert(1);
+} */
+
+.hero.hero2 span {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 27px;
+    text-align: center;
+}
+
+.hero-btns.hero2btn input {
+    padding: 0.75rem 1.5rem;
+    background: rgba(22, 22, 22, 0.87);
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    border: 2px solid rgba(169, 167, 167, 0.86);
+    color: white;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+footer span {
+    display: inline-block;
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+/* @media (min-width: 414px) {
+    .main {
+        
+        background-size: max(1770px, 100vw);
+      
+    }
+    nav {
+   
+        max-width: 98vw;
+    }
+    
+} */
+
+
+@media screen and (max-width:1300px) {
+    nav {
+   
+        max-width: 98vw;
+    }
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 350px;
+
+    }
+
+    .secImg video {
+        width: 350px;
+    }
+
+    .hero> :first-child {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .faq h1 {
+        font-size: 24px;
+    }
+    footer{
+        max-width: 62vw;
+    }
+    
+}
+
+@media screen and (max-width:1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        gap: 20px;
+
+    }
+}
+
+
+.footer a {
+    color: white;
+
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
